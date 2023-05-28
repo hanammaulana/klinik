@@ -39,6 +39,7 @@ class Welcome extends CI_Controller {
 		$data['dokter'] = $this->MainModel->getdokter();
 		$data['petugas'] = $this->MainModel->getpetugas();
 		$data['periksa'] = $this->MainModel->getperiksa();
+		$data['pasien'] = $this->MainModel->getpasien();
 		$this->load->view('header');
 		$this->load->view('pemeriksaan',$data);
 	}

@@ -55,6 +55,13 @@
                                                 <input type="text" id="nomor_rm" required="required" class="form-control " name="nomor_rm">
                                             </div>
                                         </div>
+                                        <div class="item form-group">
+                                            <div class="col-md-6 col-sm-6 offset-md-3">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                                    Daftar Pasien
+                                                </button>
+                                            </div>
+                                        </div>
                                         <div class="form-group item">
                                             <label class="control-label col-md-3 col-sm-3 label-align">Dokter <span class="required">*</span></label>
                                             <div class="col-md-6 col-sm-6 ">
@@ -100,6 +107,46 @@
                 <div class="clearfix"></div>
             </footer>
             <!-- /footer content -->
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Daftar Pasien</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body x_content">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="row">No </th>
+                                    <th>Nomor RM</th>
+                                    <th>Nama Pasien</th>
+                                    <th>Asuransi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $no = 1;
+                                if ($pasien) {
+                                    foreach ($pasien as $ps) :
+                                ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $no++ ?></th>
+                                            <th><?php echo $ps->nomor_rm ?></th>
+                                            <th><?php echo $ps->nama ?></th>
+                                            <th><?php echo $ps->asuransi ?></th>
+                                        </tr>
+                                <?php endforeach;
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

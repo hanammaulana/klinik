@@ -33,4 +33,9 @@ class MainModel extends CI_Model
     {
         $this->db->insert($table, $data);
     }
+    function getpasien ()
+    {
+        $query = $this->db->query('SELECT nomor_rm,nama,asuransi FROM `passien`');
+        return $query->result();
+    }
 }
