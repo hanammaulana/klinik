@@ -1,1 +1,1 @@
-Aplikasi Klinik Harapan
+Aplikasi Klinik Konja
