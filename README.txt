@@ -3,7 +3,7 @@ CARA MELOAD FILE
 2. install xampp yang telah di download
 3. jalankan xampp dan start apache dan mysql
 4. masuk ke admin mysql (akan diarahkan ke localhost/phpmyadmin)
-5. download dari brach master ini
+5. download dari branch master ini
 6. ekstrak file rar dan masukkan ke xampp/htdocs/namafolder
 7. buat database baru dengan nama klinikdb
 8. import klinikdb (2).sql yang ada di dalam folder ekstrak
