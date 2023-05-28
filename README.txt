@@ -9,3 +9,12 @@ CARA MELOAD FILE
 8. import klinikdb (2).sql yang ada di dalam folder ekstrak
 9. masuk ke localhost/namafolder
 10. anda akan diarahkan ke halaman login (username : admin, password : admin)
+
+Deskripsi singkat
+ini adalah aplikasi klinik yang digunakan untuk pemeriksaan pasien klinik
+
+FITUR
+penambahan pasien baru
+penambahan dokter baru
+daftar periksa
+input hasil pemeriksaan
